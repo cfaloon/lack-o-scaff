@@ -1,0 +1,11 @@
+<h1>All The Users</h1>
+
+<ul>
+  <% @users.each do |user| %>
+  <li>
+    Name: <%= user.name %>; Age: <%= user.age %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "Return to Index", root_path %>

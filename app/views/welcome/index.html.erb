@@ -1,0 +1,18 @@
+<h1>Home Page</h1>
+
+
+<h3>Create a User</h3>
+
+<%= form_tag create_users_path do %>
+  <%= text_field_tag :name, nil, placeholder: "Your Name" %><br />
+  <%= number_field_tag :age, nil, placeholder: "Your Age" %><br />
+  <%= submit_tag 'Create User' %>
+<% end %>
+
+
+<%= form_for @product do |f| %>
+  <%= f.text_field :name, placeholder: 'Product Name' %><br />
+  <%= f.number_field :price, placeholder: 'Product Price' %><br />
+  <%= f.number_field :quantity, placeholder: 'Product Qty' %><br />
+  <%= f.submit %>
+<% end %>
